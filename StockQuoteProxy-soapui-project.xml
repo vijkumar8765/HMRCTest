@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="3fb20da1-6c4b-442f-97fb-bfaadc6b1b29" activeEnvironment="Default" name="StockQuoteProxy" resourceRoot="${projectDir}" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="36340eed-66c7-4a33-bda4-b74474a26833" wsaVersion="NONE" name="StockQuoteProxySoap12Binding" type="wsdl" bindingName="{http://services.samples}StockQuoteProxySoap12Binding" soapVersion="1_2" anonymous="optional" definition="http://localhost:8280/services/StockQuoteProxy?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://vijaykona-PC:8280/services/StockQuoteProxy.StockQuoteProxyHttpSoap12Endpoint</con:endpoint><con:endpoint>https://vijaykona-PC:8243/services/StockQuoteProxy.StockQuoteProxyHttpsSoap12Endpoint</con:endpoint></con:endpoints><con:operation id="eb6e0fa4-e1d6-46ec-a97e-ec8d99a5ba1d" isOneWay="false" action="urn:getFullQuote" name="getFullQuote" bindingOperationName="getFullQuote" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4786d736-5afd-42b5-a5cc-a33686b1ff8f" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://vijaykona-PC:8280/services/StockQuoteProxy.StockQuoteProxyHttpSoap12Endpoint</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://services.samples" xmlns:xsd="http://services.samples/xsd">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:getFullQuote>\r
+         <!--Optional:-->\r
+         <ser:request>\r
+            <!--Optional:-->\r
+            <xsd:symbol>?</xsd:symbol>\r
+         </ser:request>\r
+      </ser:getFullQuote>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:getFullQuote"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="dfc67fce-b003-4048-b08c-b1ae92d5d00f" isOneWay="false" action="urn:getMarketActivity" name="getMarketActivity" bindingOperationName="getMarketActivity" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2ed55437-18c1-4f50-99ad-810a23c20abc" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://vijaykona-PC:8280/services/StockQuoteProxy.StockQuoteProxyHttpSoap12Endpoint</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://services.samples" xmlns:xsd="http://services.samples/xsd">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:getMarketActivity>\r
+         <!--Optional:-->\r
+         <ser:request>\r
+            <!--Zero or more repetitions:-->\r
+            <xsd:symbols>?</xsd:symbols>\r
+         </ser:request>\r
+      </ser:getMarketActivity>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:getMarketActivity"/></con:call></con:operation><con:operation id="a6bfa846-1e7b-4f35-897e-74587bad625e" isOneWay="false" action="urn:getQuote" name="getQuote" bindingOperationName="getQuote" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5f123d8d-82a6-4607-89ae-daadbde40ca3" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://vijaykona-PC:8280/services/StockQuoteProxy.StockQuoteProxyHttpSoap12Endpoint</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://services.samples" xmlns:xsd="http://services.samples/xsd">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:getQuote>\r
+         <!--Optional:-->\r
+         <ser:request>\r
+            <!--Optional:-->\r
+            <xsd:symbol>?</xsd:symbol>\r
+         </ser:request>\r
+      </ser:getQuote>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:getQuote"/></con:call></con:operation><con:operation id="60f607f2-be8a-4d25-b7db-375951fc66d9" isOneWay="false" action="urn:getSimpleQuote" name="getSimpleQuote" bindingOperationName="getSimpleQuote" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3b3d9dc4-9c22-48f6-b44e-a6f789e27a55" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://vijaykona-PC:8280/services/StockQuoteProxy.StockQuoteProxyHttpSoap12Endpoint</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://services.samples">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:getSimpleQuote>\r
+         <!--Optional:-->\r
+         <ser:symbol>?</ser:symbol>\r
+      </ser:getSimpleQuote>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:getSimpleQuote"/></con:call></con:operation><con:operation id="709acaf8-e001-41c7-911f-3900cb63907d" isOneWay="false" action="urn:placeOrder" name="placeOrder" bindingOperationName="placeOrder" type="One-Way" inputName="" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7639a186-d676-46bc-b013-93f0b4ba7a4a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://vijaykona-PC:8280/services/StockQuoteProxy.StockQuoteProxyHttpSoap12Endpoint</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://services.samples" xmlns:xsd="http://services.samples/xsd">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:placeOrder>\r
+         <!--Optional:-->\r
+         <ser:order>\r
+            <!--Optional:-->\r
+            <xsd:price>?</xsd:price>\r
+            <!--Optional:-->\r
+            <xsd:quantity>?</xsd:quantity>\r
+            <!--Optional:-->\r
+            <xsd:symbol>?</xsd:symbol>\r
+         </ser:order>\r
+      </ser:placeOrder>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:placeOrder"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="ac7bf3f3-f507-40f1-b435-ed64ead677fe" wsaVersion="NONE" name="StockQuoteProxySoap11Binding" type="wsdl" bindingName="{http://services.samples}StockQuoteProxySoap11Binding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8280/services/StockQuoteProxy?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:8280/services/StockQuoteProxy?wsdl"><con:part><con:url>http://localhost:8280/services/StockQuoteProxy?wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://services.samples" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns="http://services.samples" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:ax21="http://services.samples/xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:documentation>SimpleStockQuoteService</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://services.samples/xsd">
+      <xs:complexType name="PlaceOrder">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="price" type="xs:double"/>
+          <xs:element minOccurs="0" name="quantity" type="xs:int"/>
+          <xs:element minOccurs="0" name="symbol" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetQuoteResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="change" type="xs:double"/>
+          <xs:element minOccurs="0" name="earnings" type="xs:double"/>
+          <xs:element minOccurs="0" name="high" type="xs:double"/>
+          <xs:element minOccurs="0" name="last" type="xs:double"/>
+          <xs:element minOccurs="0" name="lastTradeTimestamp" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="low" type="xs:double"/>
+          <xs:element minOccurs="0" name="marketCap" type="xs:double"/>
+          <xs:element minOccurs="0" name="name" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="open" type="xs:double"/>
+          <xs:element minOccurs="0" name="peRatio" type="xs:double"/>
+          <xs:element minOccurs="0" name="percentageChange" type="xs:double"/>
+          <xs:element minOccurs="0" name="prevClose" type="xs:double"/>
+          <xs:element minOccurs="0" name="symbol" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="volume" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetQuote">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="symbol" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetMarketActivity">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="symbols" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetMarketActivityResponse">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="quotes" nillable="true" type="ax21:GetQuoteResponse"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetFullQuote">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="symbol" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetFullQuoteResponse">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="tradeHistory" nillable="true" type="ax21:TradingDay"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="TradingDay">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="day" type="xs:int"/>
+          <xs:element minOccurs="0" name="quote" nillable="true" type="ax21:GetQuoteResponse"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://services.samples" xmlns:ax22="http://services.samples/xsd">
+      <xs:import namespace="http://services.samples/xsd"/>
+      <xs:element name="placeOrder">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="order" nillable="true" type="ax22:PlaceOrder"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getSimpleQuote">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="symbol" nillable="true" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getSimpleQuoteResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="ax22:GetQuoteResponse"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SimpleStockQuoteServiceException">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="SimpleStockQuoteServiceException" nillable="true" type="ns:Exception"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:complexType name="Exception">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="getQuote">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="request" nillable="true" type="ax22:GetQuote"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getQuoteResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="ax22:GetQuoteResponse"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getMarketActivity">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="request" nillable="true" type="ax22:GetMarketActivity"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getMarketActivityResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="ax22:GetMarketActivityResponse"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getFullQuote">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="request" nillable="true" type="ax22:GetFullQuote"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getFullQuoteResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="ax22:GetFullQuoteResponse"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getQuoteRequest">
+    <wsdl:part name="parameters" element="ns:getQuote"/>
+  </wsdl:message>
+  <wsdl:message name="getQuoteResponse">
+    <wsdl:part name="parameters" element="ns:getQuoteResponse"/>
+  </wsdl:message>
+  <wsdl:message name="SimpleStockQuoteServiceException">
+    <wsdl:part name="parameters" element="ns:SimpleStockQuoteServiceException"/>
+  </wsdl:message>
+  <wsdl:message name="getSimpleQuoteRequest">
+    <wsdl:part name="parameters" element="ns:getSimpleQuote"/>
+  </wsdl:message>
+  <wsdl:message name="getSimpleQuoteResponse">
+    <wsdl:part name="parameters" element="ns:getSimpleQuoteResponse"/>
+  </wsdl:message>
+  <wsdl:message name="getMarketActivityRequest">
+    <wsdl:part name="parameters" element="ns:getMarketActivity"/>
+  </wsdl:message>
+  <wsdl:message name="getMarketActivityResponse">
+    <wsdl:part name="parameters" element="ns:getMarketActivityResponse"/>
+  </wsdl:message>
+  <wsdl:message name="getFullQuoteRequest">
+    <wsdl:part name="parameters" element="ns:getFullQuote"/>
+  </wsdl:message>
+  <wsdl:message name="getFullQuoteResponse">
+    <wsdl:part name="parameters" element="ns:getFullQuoteResponse"/>
+  </wsdl:message>
+  <wsdl:message name="placeOrderRequest">
+    <wsdl:part name="parameters" element="ns:placeOrder"/>
+  </wsdl:message>
+  <wsdl:portType name="StockQuoteProxyPortType">
+    <wsdl:operation name="getQuote">
+      <wsdl:input message="ns:getQuoteRequest" wsaw:Action="urn:getQuote"/>
+      <wsdl:output message="ns:getQuoteResponse" wsaw:Action="urn:getQuoteResponse"/>
+      <wsdl:fault message="ns:SimpleStockQuoteServiceException" name="SimpleStockQuoteServiceException" wsaw:Action="urn:getQuoteSimpleStockQuoteServiceException"/>
+    </wsdl:operation>
+    <wsdl:operation name="getSimpleQuote">
+      <wsdl:input message="ns:getSimpleQuoteRequest" wsaw:Action="urn:getSimpleQuote"/>
+      <wsdl:output message="ns:getSimpleQuoteResponse" wsaw:Action="urn:getSimpleQuoteResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="getMarketActivity">
+      <wsdl:input message="ns:getMarketActivityRequest" wsaw:Action="urn:getMarketActivity"/>
+      <wsdl:output message="ns:getMarketActivityResponse" wsaw:Action="urn:getMarketActivityResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="getFullQuote">
+      <wsdl:input message="ns:getFullQuoteRequest" wsaw:Action="urn:getFullQuote"/>
+      <wsdl:output message="ns:getFullQuoteResponse" wsaw:Action="urn:getFullQuoteResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="placeOrder">
+      <wsdl:input message="ns:placeOrderRequest" wsaw:Action="urn:placeOrder"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="StockQuoteProxySoap11Binding" type="ns:StockQuoteProxyPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="getQuote">
+      <soap:operation soapAction="urn:getQuote" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SimpleStockQuoteServiceException">
+        <soap:fault use="literal" name="SimpleStockQuoteServiceException"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getSimpleQuote">
+      <soap:operation soapAction="urn:getSimpleQuote" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMarketActivity">
+      <soap:operation soapAction="urn:getMarketActivity" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFullQuote">
+      <soap:operation soapAction="urn:getFullQuote" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="placeOrder">
+      <soap:operation soapAction="urn:placeOrder" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="StockQuoteProxySoap12Binding" type="ns:StockQuoteProxyPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="getQuote">
+      <soap12:operation soapAction="urn:getQuote" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SimpleStockQuoteServiceException">
+        <soap12:fault use="literal" name="SimpleStockQuoteServiceException"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getSimpleQuote">
+      <soap12:operation soapAction="urn:getSimpleQuote" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMarketActivity">
+      <soap12:operation soapAction="urn:getMarketActivity" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFullQuote">
+      <soap12:operation soapAction="urn:getFullQuote" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="placeOrder">
+      <soap12:operation soapAction="urn:placeOrder" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="StockQuoteProxyHttpBinding" type="ns:StockQuoteProxyPortType">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="getQuote">
+      <http:operation location="getQuote"/>
+      <wsdl:input>
+        <mime:content type="text/xml" part="parameters"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="text/xml" part="parameters"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSimpleQuote">
+      <http:operation location="getSimpleQuote"/>
+      <wsdl:input>
+        <mime:content type="text/xml" part="parameters"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="text/xml" part="parameters"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMarketActivity">
+      <http:operation location="getMarketActivity"/>
+      <wsdl:input>
+        <mime:content type="text/xml" part="parameters"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="text/xml" part="parameters"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFullQuote">
+      <http:operation location="getFullQuote"/>
+      <wsdl:input>
+        <mime:content type="text/xml" part="parameters"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="text/xml" part="parameters"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="placeOrder">
+      <http:operation location="placeOrder"/>
+      <wsdl:input>
+        <mime:content type="text/xml" part="parameters"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="StockQuoteProxy">
+    <wsdl:port name="StockQuoteProxyHttpsSoap11Endpoint" binding="ns:StockQuoteProxySoap11Binding">
+      <soap:address location="https://vijaykona-PC:8243/services/StockQuoteProxy.StockQuoteProxyHttpsSoap11Endpoint"/>
+    </wsdl:port>
+    <wsdl:port name="StockQuoteProxyHttpSoap11Endpoint" binding="ns:StockQuoteProxySoap11Binding">
+      <soap:address location="http://vijaykona-PC:8280/services/StockQuoteProxy.StockQuoteProxyHttpSoap11Endpoint"/>
+    </wsdl:port>
+    <wsdl:port name="StockQuoteProxyHttpSoap12Endpoint" binding="ns:StockQuoteProxySoap12Binding">
+      <soap12:address location="http://vijaykona-PC:8280/services/StockQuoteProxy.StockQuoteProxyHttpSoap12Endpoint"/>
+    </wsdl:port>
+    <wsdl:port name="StockQuoteProxyHttpsSoap12Endpoint" binding="ns:StockQuoteProxySoap12Binding">
+      <soap12:address location="https://vijaykona-PC:8243/services/StockQuoteProxy.StockQuoteProxyHttpsSoap12Endpoint"/>
+    </wsdl:port>
+    <wsdl:port name="StockQuoteProxyHttpEndpoint" binding="ns:StockQuoteProxyHttpBinding">
+      <http:address location="http://vijaykona-PC:8280/services/StockQuoteProxy.StockQuoteProxyHttpEndpoint"/>
+    </wsdl:port>
+    <wsdl:port name="StockQuoteProxyHttpsEndpoint" binding="ns:StockQuoteProxyHttpBinding">
+      <http:address location="https://vijaykona-PC:8243/services/StockQuoteProxy.StockQuoteProxyHttpsEndpoint"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://vijaykona-PC:8280/services/StockQuoteProxy.StockQuoteProxyHttpSoap11Endpoint</con:endpoint><con:endpoint>https://vijaykona-PC:8243/services/StockQuoteProxy.StockQuoteProxyHttpsSoap11Endpoint</con:endpoint></con:endpoints><con:operation id="d610e469-9bed-435b-b3c1-3d2da9071c1f" isOneWay="false" action="urn:getFullQuote" name="getFullQuote" bindingOperationName="getFullQuote" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="66941b07-8dd7-4ab7-ba7a-913b617f03d3" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://vijaykona-PC:8280/services/StockQuoteProxy.StockQuoteProxyHttpSoap11Endpoint</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://services.samples" xmlns:xsd="http://services.samples/xsd">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:getFullQuote>\r
+         <!--Optional:-->\r
+         <ser:request>\r
+            <!--Optional:-->\r
+            <xsd:symbol>?</xsd:symbol>\r
+         </ser:request>\r
+      </ser:getFullQuote>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:getFullQuote"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="feb442e4-fb44-40ad-8567-8036277fd31a" isOneWay="false" action="urn:getMarketActivity" name="getMarketActivity" bindingOperationName="getMarketActivity" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="cb20e241-6b8a-435f-991a-b717d59e151c" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://vijaykona-PC:8280/services/StockQuoteProxy.StockQuoteProxyHttpSoap11Endpoint</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://services.samples" xmlns:xsd="http://services.samples/xsd">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:getMarketActivity>\r
+         <!--Optional:-->\r
+         <ser:request>\r
+            <!--Zero or more repetitions:-->\r
+            <xsd:symbols>?</xsd:symbols>\r
+         </ser:request>\r
+      </ser:getMarketActivity>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:getMarketActivity"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="21f2f287-40c4-47d8-8e43-cc7490fcbd6c" isOneWay="false" action="urn:getQuote" name="getQuote" bindingOperationName="getQuote" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ac66cd7c-ba1d-4909-91c6-8abdbccd0b69" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://vijaykona-PC:8280/services/StockQuoteProxy.StockQuoteProxyHttpSoap11Endpoint</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://services.samples" xmlns:xsd="http://services.samples/xsd">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:getQuote>\r
+         <!--Optional:-->\r
+         <ser:request>\r
+            <!--Optional:-->\r
+            <xsd:symbol>?</xsd:symbol>\r
+         </ser:request>\r
+      </ser:getQuote>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:getQuote"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="7d5191ae-0024-4df0-9f4b-98bc4e665804" isOneWay="false" action="urn:getSimpleQuote" name="getSimpleQuote" bindingOperationName="getSimpleQuote" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="df578263-28b2-4e99-8ef1-16bccffd1d7e" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://vijaykona-PC:8280/services/StockQuoteProxy.StockQuoteProxyHttpSoap11Endpoint</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://services.samples">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:getSimpleQuote>\r
+         <!--Optional:-->\r
+         <ser:symbol>?</ser:symbol>\r
+      </ser:getSimpleQuote>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:getSimpleQuote"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="938fce91-3361-45c4-9c83-63403995f225" isOneWay="false" action="urn:placeOrder" name="placeOrder" bindingOperationName="placeOrder" type="One-Way" inputName="" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="73f9bcdf-e9fe-4b43-bef3-f4ca0a77ef66" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://vijaykona-PC:8280/services/StockQuoteProxy.StockQuoteProxyHttpSoap11Endpoint</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://services.samples" xmlns:xsd="http://services.samples/xsd">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:placeOrder>\r
+         <!--Optional:-->\r
+         <ser:order>\r
+            <!--Optional:-->\r
+            <xsd:price>?</xsd:price>\r
+            <!--Optional:-->\r
+            <xsd:quantity>?</xsd:quantity>\r
+            <!--Optional:-->\r
+            <xsd:symbol>?</xsd:symbol>\r
+         </ser:order>\r
+      </ser:placeOrder>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:placeOrder"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="2da5956c-39dc-49d7-8f58-d5718622d7f9" name="StockQuoteProxySoap12Binding TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="b7d5cec0-7de1-456a-9fc7-6bb511b22e90" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getFullQuote TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="79b6bcc8-fb3a-407c-b0e8-2f4316996989" name="getFullQuote"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>StockQuoteProxySoap12Binding</con:interface><con:operation>getFullQuote</con:operation><con:request name="getFullQuote" id="7341fc12-b05f-4eef-968a-234da6896490"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://vijaykona-PC:8280/services/StockQuoteProxy.StockQuoteProxyHttpSoap12Endpoint</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://services.samples" xmlns:xsd="http://services.samples/xsd">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:getFullQuote>\r
+         <!--Optional:-->\r
+         <ser:request>\r
+            <!--Optional:-->\r
+            <xsd:symbol>?</xsd:symbol>\r
+         </ser:request>\r
+      </ser:getFullQuote>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="urn:getFullQuote"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="56a4f41b-be17-40ca-a86f-3fdb9837268c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getMarketActivity TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="e005ebed-5737-4c2f-8a86-4b853ecb544d" name="getMarketActivity"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>StockQuoteProxySoap12Binding</con:interface><con:operation>getMarketActivity</con:operation><con:request name="getMarketActivity" id="299196d0-67ca-41b6-9262-68c85da7edf9"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://vijaykona-PC:8280/services/StockQuoteProxy.StockQuoteProxyHttpSoap12Endpoint</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://services.samples" xmlns:xsd="http://services.samples/xsd">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:getMarketActivity>\r
+         <!--Optional:-->\r
+         <ser:request>\r
+            <!--Zero or more repetitions:-->\r
+            <xsd:symbols>?</xsd:symbols>\r
+         </ser:request>\r
+      </ser:getMarketActivity>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="urn:getMarketActivity"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="7da6f4a2-9b66-48f0-ac75-12f050c2dd30" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getQuote TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="edafa638-ca15-4e82-8f1d-d6b89501d6fc" name="getQuote"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>StockQuoteProxySoap12Binding</con:interface><con:operation>getQuote</con:operation><con:request name="getQuote" id="8734f8b1-a5e5-4b73-bf47-319bdd4e6d7d"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://vijaykona-PC:8280/services/StockQuoteProxy.StockQuoteProxyHttpSoap12Endpoint</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://services.samples" xmlns:xsd="http://services.samples/xsd">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:getQuote>\r
+         <!--Optional:-->\r
+         <ser:request>\r
+            <!--Optional:-->\r
+            <xsd:symbol>?</xsd:symbol>\r
+         </ser:request>\r
+      </ser:getQuote>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="urn:getQuote"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="d67bf3fb-7064-4f7c-8ae3-05c9529c1e15" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getSimpleQuote TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="ab267c55-ef5f-4ce7-9895-fc31f34cdf78" name="getSimpleQuote"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>StockQuoteProxySoap12Binding</con:interface><con:operation>getSimpleQuote</con:operation><con:request name="getSimpleQuote" id="d80be713-c973-48eb-9785-3fdb1e001907"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://vijaykona-PC:8280/services/StockQuoteProxy.StockQuoteProxyHttpSoap12Endpoint</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://services.samples">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:getSimpleQuote>\r
+         <!--Optional:-->\r
+         <ser:symbol>?</ser:symbol>\r
+      </ser:getSimpleQuote>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="urn:getSimpleQuote"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="cad08853-4293-416f-90dd-25f61a0c58a0" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="placeOrder TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="3dcea7ab-3b16-4aa2-a492-4a17369ff67c" name="placeOrder"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>StockQuoteProxySoap12Binding</con:interface><con:operation>placeOrder</con:operation><con:request name="placeOrder" id="6604528b-f17d-4d4e-875b-e781e63ddae1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://vijaykona-PC:8280/services/StockQuoteProxy.StockQuoteProxyHttpSoap12Endpoint</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://services.samples" xmlns:xsd="http://services.samples/xsd">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:placeOrder>\r
+         <!--Optional:-->\r
+         <ser:order>\r
+            <!--Optional:-->\r
+            <xsd:price>?</xsd:price>\r
+            <!--Optional:-->\r
+            <xsd:quantity>?</xsd:quantity>\r
+            <!--Optional:-->\r
+            <xsd:symbol>?</xsd:symbol>\r
+         </ser:order>\r
+      </ser:placeOrder>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="urn:placeOrder"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="2e79a3c6-3658-4547-a514-9ad583fc42d0" name="StockQuoteProxySoap11Binding TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="2f725223-d08b-4e77-8f22-47d532b88e0c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getFullQuote TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="afcd656d-8db5-4261-922d-699d3d4e8f2a" name="getFullQuote"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>StockQuoteProxySoap11Binding</con:interface><con:operation>getFullQuote</con:operation><con:request name="getFullQuote" id="2a491316-2a46-4097-98ca-9f78e418eb1a"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://vijaykona-PC:8280/services/StockQuoteProxy.StockQuoteProxyHttpSoap11Endpoint</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://services.samples" xmlns:xsd="http://services.samples/xsd">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:getFullQuote>\r
+         <!--Optional:-->\r
+         <ser:request>\r
+            <!--Optional:-->\r
+            <xsd:symbol>?</xsd:symbol>\r
+         </ser:request>\r
+      </ser:getFullQuote>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="urn:getFullQuote"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="29fa6c6e-0fd4-4d8c-89ae-526766a3d788" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getMarketActivity TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="1f053680-22cb-4abd-8e31-fab0770016a3" name="getMarketActivity"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>StockQuoteProxySoap11Binding</con:interface><con:operation>getMarketActivity</con:operation><con:request name="getMarketActivity" id="99363799-3a42-412b-8045-c05c354ef6ec"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://vijaykona-PC:8280/services/StockQuoteProxy.StockQuoteProxyHttpSoap11Endpoint</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://services.samples" xmlns:xsd="http://services.samples/xsd">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:getMarketActivity>\r
+         <!--Optional:-->\r
+         <ser:request>\r
+            <!--Zero or more repetitions:-->\r
+            <xsd:symbols>?</xsd:symbols>\r
+         </ser:request>\r
+      </ser:getMarketActivity>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="urn:getMarketActivity"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="e45631a9-2da2-4c20-a1cd-4d48367669a3" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getQuote TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="5803f0f9-e87f-41e9-8eef-db212cf82575" name="getQuote"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>StockQuoteProxySoap11Binding</con:interface><con:operation>getQuote</con:operation><con:request name="getQuote" id="37518363-36f7-4b3b-a7fa-2eef4fcd7d35"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://vijaykona-PC:8280/services/StockQuoteProxy.StockQuoteProxyHttpSoap11Endpoint</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://services.samples" xmlns:xsd="http://services.samples/xsd">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:getQuote>\r
+         <!--Optional:-->\r
+         <ser:request>\r
+            <!--Optional:-->\r
+            <xsd:symbol>?</xsd:symbol>\r
+         </ser:request>\r
+      </ser:getQuote>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="urn:getQuote"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="ef959ebb-6d7e-432e-866f-e9b1afb37abb" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getSimpleQuote TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="02faadaf-8c7f-45aa-9d03-8e1507e0539a" name="getSimpleQuote"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>StockQuoteProxySoap11Binding</con:interface><con:operation>getSimpleQuote</con:operation><con:request name="getSimpleQuote" id="e4a2f5de-bd51-4530-b16e-f6ed3d7de259"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://vijaykona-PC:8280/services/StockQuoteProxy.StockQuoteProxyHttpSoap11Endpoint</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://services.samples">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:getSimpleQuote>\r
+         <!--Optional:-->\r
+         <ser:symbol>?</ser:symbol>\r
+      </ser:getSimpleQuote>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="urn:getSimpleQuote"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="61032442-347c-4453-8daf-e743b85460ee" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="placeOrder TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="fd0b00a9-eb8a-4b22-8b19-d1532822b1d3" name="placeOrder"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>StockQuoteProxySoap11Binding</con:interface><con:operation>placeOrder</con:operation><con:request name="placeOrder" id="70599558-ff44-4cf4-b64b-88e31506ba60"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://vijaykona-PC:8280/services/StockQuoteProxy.StockQuoteProxyHttpSoap11Endpoint</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://services.samples" xmlns:xsd="http://services.samples/xsd">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:placeOrder>\r
+         <!--Optional:-->\r
+         <ser:order>\r
+            <!--Optional:-->\r
+            <xsd:price>?</xsd:price>\r
+            <!--Optional:-->\r
+            <xsd:quantity>?</xsd:quantity>\r
+            <!--Optional:-->\r
+            <xsd:symbol>?</xsd:symbol>\r
+         </ser:order>\r
+      </ser:placeOrder>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="urn:placeOrder"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
